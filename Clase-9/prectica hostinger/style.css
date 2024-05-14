@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+:root{
+    font-family: "DM Sans", sans-serif;
+    --bg-color-terciary: #f4f5ff;
+    --text-color: #2f1c6a;
+    --bg-color: #fafbff;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-text);
+}
+
+
+.text{
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 24px;
+}
+
+.card{
+    border-radius: 5px;
+    padding: 32px;
+}
+
+
+.section{
+    padding: 32px 16px;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #f4f5ff;
+}
+
+
+head nav{
+    display: none;
+}
+
+body{
+    margin-top: 70px;
+    height: 500vh;
+}
+
+
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.review-card{
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.review-card img{
+    width: 200px;
+}
+
+@media screen and (min-width: 750px){
+    .card{
+        max-width: 670px;
+    }
+}
+
+@media screen and (min-width: 1050px){
+    header nav{
+        display: flex;
+    }
+    header button{
+        display: none;
+    }
+
+    .review{
+        flex-direction: row;
+        align-items: flex-start;
+        max-width: 1208px;
+    }
+
+    .reviews .review-card{
+        flex: 1;
+        height: 300px;
+    }
+}

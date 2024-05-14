@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root{
+    --ff-text: "DM Sans", sans-serif;
+    --font-color: #FFFFFF ;
+    --back-color: #673DE6;
+    --box-color: #5025D1 ;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-text);
+    color: var(--font-color);
+}
+
+
+.sitio-seguro{
+    background-color: var(--back-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 60px 5px;  
+    gap: 25px;
+}
+
+/* top-section*/
+
+.top-section .advantages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 7px;
+    gap: 18px;
+}
+
+.top-section .advantages h2{
+    font-size: 25px;
+    word-spacing: 1px;
+    margin-bottom: 10px;
+    padding-left: 8px;
+}
+
+.top-section .advantages .adv-list i{
+    font-size: 25px; 
+}
+
+.top-section .advantages .adv-list p{
+    font-weight: 450;
+    font-size: 17px;
+}
+
+.top-section .advantages .adv-list{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 100;
+    
+}
+.top-section .img-girl img{
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+/* bottom-section*/
+
+section .bottom-section{
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    gap: 40px;
+}
+
+section .bottom-section article{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--box-color);
+    
+    padding: 35px;
+    padding-bottom: 60px;
+    border-radius: 2%;
+    position: relative;
+}
+
+
+.bottom-section .reviews img{
+    width: 224px;
+}
+
+.bottom-section .reviews .review-txt{
+    font-size: 17px;
+    line-height: 25px;
+    
+}
+
+/* .bottom-section .reviews {
+} */
+
+.bottom-section .reviews .arrow-link{
+    font-size: 15px;
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+}
+
+.bottom-section .reviews .arrow-link2{
+    position: absolute;
+    right: 40px;
+}
+
+.bottom-section .reviews .arrow-link3{
+    position: absolute;
+    right: 40px;
+}
+
+
+@media screen and (min-width: 540px){
+    .top-section .advantages .adv-list{
+        max-width: 540px;
+    }
+    .top-section .img-girl img{
+        max-width: 526px;
+    }
+    section .bottom-section article{
+        max-width: 526px;
+    }
+}
+
+@media screen and (min-width: 650px){
+    
+    .sitio-seguro{
+        padding: 40px;
+    }
+
+    .top-section .advantages .adv-list{
+        max-width: 100%;
+    }
+    .top-section .img-girl img{
+        max-width: 100%;
+    }
+    section .bottom-section article{
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .top-section .advantages .adv-list{
+        max-width: 818px;
+    }
+    .top-section .img-girl img{
+        max-width: 804px;
+    }
+    section .bottom-section article{
+        max-width: 804px;
+    }
+}
+
+@media screen and (min-width: 1050px){
+    
+    .sitio-seguro{
+        padding: 130px;
+    }
+
+    .top-section .advantages .adv-list{
+        max-width: 100%;
+    }
+    .top-section .img-girl img{
+        max-width: 100%;
+    }
+    section .bottom-section article{
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .top-section .advantages .adv-list{
+        max-width: 940px;
+    }
+    .top-section .img-girl img{
+        max-width: 926px;
+    }
+    section .bottom-section article{
+        max-width: 926px;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    
+
+    .top-section{
+        display: flex;
+    }
+
+    .top-section .advantages{
+        flex-direction: column;
+        justify-content: center;
+        width: 480px;
+        position: relative;
+        left: 600px;
+    }
+
+    .top-section .img-girl img{
+        max-width: 580px;
+        position: relative;
+        right: 550px;
+    }
+
+
+    .top-section .advantages h2{
+    font-size: 40px;
+    word-spacing: 1px;
+    margin-bottom: 10px;
+    padding-left: 8px;
+}
+
+
+
+    section .bottom-section{
+        flex-direction: row;
+        gap: 25px;
+        padding: 0px 120px;
+    }
+
+    section .bottom-section .reviews{
+        flex: 1;
+    }
+
+}
