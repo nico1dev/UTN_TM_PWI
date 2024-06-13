@@ -119,7 +119,7 @@ Crear una funcion llamada calcularIva que reciba un precio y muestre el iva por 
 ej: calcularIva(100) => console: 21
 */
 
-function validarNumero (){
+/* function validarNumero (){
     let numero = prompt('ingrese un numero')
     while (!numero || isNaN(numero)){
         alert('El dato debe ser un numero')
@@ -132,7 +132,7 @@ let cantidadDeRepeticiones = solicitarYValidarNumero()
 let suma = 0
 
 for(let iteracion = 1; iteracion <=)
-
+ */
 
 /* let sumatoria=0
 let cantidad = prompt('Ingrese una cantidad de repeticiones')
