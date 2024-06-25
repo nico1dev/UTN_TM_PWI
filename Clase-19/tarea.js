@@ -1,10 +1,10 @@
-const comprarHtml = document.getElementById('comprar')
-const elegirHtml = document.getElementById('elegir-cantidad')
-const restarHtml = document.getElementById('restar')
-const numeroHtml = document.getElementById('numero')
-const agregarHtml = document.getElementById('agregar')
+const comprarHTML = document.getElementById('comprar')
+const elegirHTML= document.getElementById('elegir-cantidad')
+const restarHTML = document.getElementById('restar')
+const numeroHTML= document.getElementById('numero')
+const agregarHTML = document.getElementById('agregar')
 
-elegirHtml.style.display = 'none'
+elegirHTML.style.display = 'none'
 
 const onClick = () =>{
     comprarHTML.style.display = 'none'
